@@ -1,0 +1,26 @@
+<div id="gchart-bar-{{count}}"></div>
+
+<script>
+google.setOnLoadCallback (gchart_bar_{{count}});
+
+function gchart_bar_{{count}} () {
+	var data = new google.visualization.DataTable ();
+
+	{% foreach labels as label %}
+	data.addColumn ('{{label->type}}', '{{label->label}}');
+	{% end %}
+
+	data.addRows ({{data|json_encode}});
+
+	var options = {
+		width: {{width}},
+		height: {{height}}
+	};
+	{% if title %}
+	options.title = "{{title}}";
+	{% end %}
+
+	var chart = new google.visualization.BarChart (document.getElementById ('gchart-bar-{{count}}'));
+	chart.draw (data, options);
+}
+</script>
