@@ -1,0 +1,13 @@
+<div id="qrcode-{{id}}"></div>
+<script>
+$(function () {
+	$('#qrcode-{{id}}').qrcode ({
+		render: 'canvas',
+		width: {{width}},
+		height: {{height}},
+		color: '#{{color}}',
+		{% if bgcolor %}bgColor: '#{{bgcolor}}',{% end %}
+		text: "{{data|quotes}}"
+	});
+});
+</script>
