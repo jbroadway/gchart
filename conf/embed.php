@@ -3,6 +3,7 @@
 [gchart/bar]
 
 label = "Chart: Bar"
+icon = bar-chart-o
 
 title[label] = "Chart title (optional)"
 title[type] = text
@@ -23,6 +24,7 @@ height[initial] = 300
 [gchart/column]
 
 label = "Chart: Column"
+icon = bar-chart-o
 
 title[label] = "Chart title (optional)"
 title[type] = text
@@ -43,6 +45,7 @@ height[initial] = 300
 [gchart/pie]
 
 label = "Chart: Pie"
+icon = bar-chart-o
 
 title[label] = "Chart title (optional)"
 title[type] = text
@@ -63,6 +66,7 @@ height[initial] = 300
 [gchart/qrcode]
 
 label = "QR Code"
+icon = qrcode
 
 data[label] = "Link or text"
 data[type] = text
