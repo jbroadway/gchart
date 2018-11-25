@@ -16,8 +16,17 @@ function gchart_pie_{{count}} () {
 		width: {{width}},
 		height: {{height}}
 	};
+
 	{% if title %}
 	options.title = "{{title}}";
+	{% end %}
+
+	{% if bgcolor %}
+	options.backgroundColor = "#{{bgcolor}}";
+	{% end %}
+
+	{% if legend %}
+	options.legend = "{{legend}}";
 	{% end %}
 
 	var chart = new google.visualization.PieChart (document.getElementById ('gchart-pie-{{count}}'));

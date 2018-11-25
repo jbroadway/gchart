@@ -106,6 +106,14 @@ The height of the chart graphic.
 
 The title of the chart graphic.
 
+#### `bgcolor`
+
+The background colour of the chart, specified as `'f5f5f5'`.
+
+#### `legend`
+
+Whether to show the legend. Use the value `'none'` to hide it.
+
 ### QR Codes
 
 To generate a QR code, use the following handler call:

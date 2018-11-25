@@ -16,6 +16,7 @@ if (! is_array ($data['data'])) {
 $data['count'] = self::$called['gchart/bar'];
 $data['width'] = isset ($data['width']) ? $data['width'] : 400;
 $data['height'] = isset ($data['height']) ? $data['height'] : 300;
+$data['bgcolor'] = isset ($data['bgcolor']) ? $data['bgcolor'] : null;
 $data['labels'] = GChart::get_labels (
 	isset ($data['labels']) ? $data['labels'] : array_shift ($data['data'])
 );
